@@ -1,0 +1,339 @@
+
+
+/* ----------------------------------------------------------------------*/
+/*                       Learnings Box                                 */
+/* ----------------------------------------------------------------------*/
+
+
+.learnings {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all .2s ease-in;
+    margin-bottom: 65px;
+    margin-top: 65px;
+}
+
+
+.learnings .content-creator {
+    /* background-color: rgba(184, 150, 242, 0.5); */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.learnings .programming {
+    /* background-color: rgb(162, 227, 242, 0.5); */
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                     The Boxes' Content                      
+/* ----------------------------------------------------------------------*/
+
+
+.learnings .programming h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.learnings .programming .main-content, .learnings .content-creator .main-content {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.learnings .programming .main-content div, .learnings .content-creator .main-content div {
+    background-color: aliceblue;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    scale: 97%;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all .15s ease-in;
+}
+
+
+.learnings .programming .main-content div img, .learnings .content-creator .main-content div img {
+    width: 25%;
+    height: auto;
+    padding: 2% 2% 2% 2%;
+    background-color: rgb(202, 225, 246);
+}
+
+
+.learnings .programming .main-content div .content, .learnings .content-creator .main-content div .content {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px;
+    justify-content: space-between;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0);
+    margin-left: 1%;
+}
+
+
+.learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+    width: 100%;
+    font-size: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+    font-size: 20px;
+    height: 35%;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                     Programming Content                     
+/* ----------------------------------------------------------------------*/
+
+
+.learnings .programming .main-content div .content button {
+    height: 15%;
+    width: 40%;
+    background-color: rgb(216, 242, 130);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .15s ease-in;
+}
+.learnings .programming .main-content div .content button a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2% 25% 2% 25%;
+    color: black;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                     Content Creating Content                      
+/* ----------------------------------------------------------------------*/
+
+
+.learnings .content-creator h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                     The Hover Events                      
+/* ----------------------------------------------------------------------*/
+
+
+.learnings .programming .main-content div:hover {
+    scale: 99%;
+}
+
+
+.learnings .content-creator .main-content div:hover {
+    scale: 99%;
+}
+
+
+.learnings .programming .main-content div .content:hover {
+    scale:97%
+}
+
+
+.learnings .content-creator .main-content div .content:hover {
+    scale:97%
+}
+
+
+.learnings .programming .main-content div .content button:hover {
+    background-color: rgb(0, 166, 255);
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                     MEDIA QUERIES   
+/* ----------------------------------------------------------------------*/
+
+
+
+@media (max-width: 1370px) {
+    .learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+        font-size: 15px;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 40px;
+    }
+    .learnings .programming .main-content div .content button a{
+        font-size: 15px;
+    }
+    .learnings .programming .main-content div .content button {
+        width: 27%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+        font-size: 13px;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 30px;
+    }
+    .learnings .programming .main-content div .content button a{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .learnings .programming .main-content div, .learnings .content-creator .main-content div {
+        width: 75%;
+    }
+    .learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+        font-size: 15px;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 40px;
+    }
+    .learnings .programming .main-content div .content button a{
+        font-size: 15px;
+    }
+    .learnings .programming .main-content div .content button {
+        width: 27%;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .learnings .programming .main-content div, .learnings .content-creator .main-content div {
+        width: 95%;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 510px) {
+    .learnings .programming .main-content div, .learnings .content-creator .main-content div {
+        width: 110%;
+    }
+    .learnings .programming .main-content div .content button a{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .learnings .content-creator h2, .learnings .programming h2 {
+        font-size: 40px;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 30px;
+    }
+    .learnings .programming .main-content div .content button {
+        height: 20%;
+    }
+    .learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .learnings .content-creator h2, .learnings .programming h2 {
+        font-size: 30px;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 20px;
+    }
+    
+    .learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+        font-size: 10px;
+    }
+    .learnings .programming .main-content div .content button a{
+        font-size: 11px;
+    }
+}
+
+
+@media (min-width: 2000px) {
+    .learnings .programming .main-content div, .learnings .content-creator .main-content div {
+        width: 75%;
+    }
+    .learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+        font-size: 45px;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 80px;
+    }
+    .learnings .programming .main-content div .content button a{
+        font-size: 40px;
+    }
+    .learnings .content-creator h2, .learnings .programming h2 {
+        font-size: 100px;
+    }
+    .learnings .programming .main-content div .content button {
+        width: 27%;
+    }
+}
+
+
+@media (min-width: 2800px) {
+    .learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+        font-size: 60px;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 100px;
+    }
+    .learnings .programming .main-content div .content button a{
+        font-size: 55px;
+    }
+    .learnings .content-creator h2, .learnings .programming h2 {
+        font-size: 140px;
+    }
+    .learnings .programming .main-content div .content button {
+        width: 27%;
+    }
+}
+
+
+@media (min-width: 3800px) {
+    .learnings .programming .main-content div .content p, .learnings .content-creator .main-content div .content p {
+        font-size: 75px;
+    }
+    .learnings .programming .main-content div .content h3, .learnings .content-creator .main-content div .content h3 {
+        font-size: 130px;
+    }
+    .learnings .programming .main-content div .content button a{
+        font-size: 70px;
+    }
+    .learnings .content-creator h2, .learnings .programming h2 {
+        font-size: 170px;
+    }
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                                END
+/* ----------------------------------------------------------------------*/

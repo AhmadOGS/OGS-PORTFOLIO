@@ -1,0 +1,305 @@
+/*----------------------------------------------------
+                  Works Box
+-----------------------------------------------------*/
+
+
+.works {
+    margin: 65px 5% 65px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(240, 248, 255, 0.684);
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all .15s ease-in;
+}
+
+
+/*----------------------------------------------------
+                  Works
+-----------------------------------------------------*/
+
+
+.works div {
+    background-color: #74c1d6;
+    width: 100%;
+    border-top-left-radius: 40px;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: all .21s ease-in-out;
+}
+
+
+.works div img {
+    width: 50%;
+    height: auto;
+    scale: 94%;
+    border-radius: 15px;
+}
+
+
+.works div .content {
+    border-top-left-radius: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    scale: 90%;
+}
+
+
+.works div .content h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 30%;
+}
+
+
+.works div .content p {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 40%;
+}
+
+
+.works div .content .btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top-left-radius: 0px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+
+.works div .content .btn button {
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+
+.works div .content .btn button a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    padding: 20% 20% 20% 20%;
+}
+
+
+/*----------------------------------------------------
+                  Hover Events
+-----------------------------------------------------*/
+
+
+.works div:hover {
+    scale: 103%;
+}
+
+
+.works div .content:hover {
+    scale: 90%;
+}
+
+
+.works div .content .btn:hover {
+    scale: 100%;
+}
+
+
+.works div .content .btn button:hover {
+    background-color: rgb(0, 166, 255);
+}
+
+
+/*----------------------------------------------------
+                  Media Queries
+-----------------------------------------------------*/
+
+
+@media (max-width: 1250px) {
+    .works div .content p {
+        font-size: 23px;
+    }
+    .works div .content h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .works div .content .btn button a {
+        padding: 5% 5% 5% 5%;
+    }
+    .works div .content p {
+        font-size: 17px;
+    }
+    .works div .content .btn {
+        margin-top: 3%;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .works {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        width: 97%;
+    }
+    .works div {
+        flex-direction: column;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    .works div img {
+        width: 100%;
+    }
+    .works div .content {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .works div .content .btn {
+        flex-direction: row;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .works div .content h2 {
+        font-size: 30px;
+    }
+    .works div .content .btn button a {
+        font-size: 20px;
+    }
+    .works div {
+        margin-bottom: 5%;
+    }
+    .works div .content {
+        margin-bottom: 0%;
+    }
+    .works div .content .btn {
+        margin-bottom: 0%;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .works div .content p {
+        font-size: 13px;
+    }
+    .works div .content h2 {
+        font-size: 20px;
+    }
+    .works div .content .btn button a {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 2000px) {
+    .works {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        width: 97%;
+        margin-bottom: 20%;
+    }
+    .works div {
+        flex-direction: column;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    .works div img {
+        width: 75%;
+        height: 50%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+    .works div .content {
+        width: 100%;
+        height: 50%;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .works div .content .btn {
+        flex-direction: row;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .works div .content p {
+        font-size: 70px;
+        margin-bottom: 5%;
+    }
+    .works div .content h2 {
+        font-size: 100px;
+        margin-bottom: -3%;
+    }
+    .works div .content .btn button a {
+        font-size: 80px;
+    }
+}
+
+
+@media (min-width: 3800px) {
+    .works div img {
+        width: 90%;
+        height: 75%;
+        margin-left: 5%;
+        margin-right: 5%;
+        scale: 99%;
+    }
+    .works div .content {
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .works div .content h2 {
+        height: auto;
+        text-align: start;
+        width: 30%;
+        font-size: 170px;
+        margin-top: 4%;
+    }
+    .works div .content p {
+        height: auto;
+        width: 40%;
+        text-align: start;
+        font-size: 80px;
+        margin-top: 3.5%;
+    }
+    .works div .content .btn {
+        height: 50%;
+        width: 30%;
+        margin-top: 3.5%;
+    }
+    .works div .content .btn button {
+        border-radius: 50%;
+    }
+    .works div .content .btn button a{
+        font-size: 90px;
+    }
+}
+
+
+@media (min-width: 5300px) {
+    .works div .content h2 {
+        font-size: 200px;
+    }
+    .works div .content p {
+        font-size: 100px;
+    }
+}

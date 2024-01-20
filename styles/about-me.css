@@ -1,0 +1,450 @@
+
+
+/* ----------------------------------------------------------------------*/
+/*                             General Infos                      
+/* ----------------------------------------------------------------------*/
+
+
+.general-infos {
+    width: 75%;
+    background: #ffffffce;
+    /* box-shadow: 0 1px 25px rgba(0,0,0,0.2); */
+    position: relative;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    padding: 12px 10px;
+    transition: all .2s ease-in;
+}
+
+/* ----------------------------------------------------------------------*/
+/*                             General Infos Content                     
+/* ----------------------------------------------------------------------*/
+
+
+.general-infos div {
+    margin-left: 5%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.logo {
+    width: 35%;
+    height: 100%;
+    position: relative;
+    left: 2%;
+    border-radius: 50%;
+}
+
+
+.general-infos div h1 {
+    width: 75%;
+    margin-top: 10px;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.general-infos div p {
+    width: 80%;
+    position: relative;
+    float: right;
+    margin-bottom: 10%;
+    align-content: end;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                             Extra Infos                      
+/* ----------------------------------------------------------------------*/
+
+
+.extra-infos {
+    position: relative;
+    border-radius: 20px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 15px;
+    background-color: #ffffffce;
+    /* box-shadow: 0px 1px 25px rgb(0, 0, 0, 0.2); */
+    width: 75%;
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all .2s ease-in;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                             Hobbies                      
+/* ----------------------------------------------------------------------*/
+
+
+.extra-infos .hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                             Hobbies Content                     
+/* ----------------------------------------------------------------------*/
+
+
+.extra-infos .hobbies h2 {
+    font-size: 85px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.cards div {
+    width: 23%;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    transition: all .15s ease-out;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cards div img {
+    width: 100%;
+    height: auto;
+    scale: 95%;
+}
+
+
+.cards div p {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                             Social Media                     
+/* ----------------------------------------------------------------------*/
+
+
+.extra-infos .social-media {
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                         Social Media Content                     
+/* ----------------------------------------------------------------------*/
+
+
+.social-media h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 85px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.social-media .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.social-media .container div {
+    width: 23%;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    transition: all .15s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.social-media .container div img {
+    width: 100%;
+    height: auto;
+    scale: 94%;
+}
+
+
+.social-media .container h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+
+.social-media .container button {
+    width: 75%;
+    background-color: aliceblue;
+    border-color: cornflowerblue;
+    scale: 80%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
+
+
+.container a{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                             Hover Events                      
+/* ----------------------------------------------------------------------*/
+
+
+.cards div:hover{
+    scale: 105%;
+}
+
+.container div:hover {
+    scale: 105%;
+}
+
+
+.container div .content:hover {
+    scale: 100%;
+}
+
+
+.container div button:hover {
+    background-color: #0056B2;
+}
+
+
+.container div button a:hover {
+    color: #c3d4f2;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                           MEDIA QUERIES                     
+/* ----------------------------------------------------------------------*/
+
+
+@media (min-width: 2000px) {
+    .extra-infos {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    .general-infos {
+        width: 85%;
+        margin-top: .5%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    .general-infos div h1 {
+        font-size: 120px;
+    }
+    .general-infos div p {
+        font-size: 45px;
+    }
+}
+
+
+@media (min-width: 3000px) {
+    .general-infos div h1 {
+        font-size: 170px;
+    }
+    .general-infos div p {
+        font-size: 55px;
+    }
+    .extra-infos .hobbies h2, .social-media h2 {
+        font-size: 150px;
+    }
+    .cards div p,.social-media .container div h3 {
+        font-size: 90px;
+    }
+    .social-media div button a {
+        font-size: 60px;
+    }
+}
+
+
+@media (min-width: 4000px) {
+    .general-infos div h1 {
+        font-size: 200px;
+    }
+    .general-infos div p {
+        font-size: 70px;
+    }
+    .social-media div button a {
+        font-size: 90px;
+    }
+}
+
+
+@media (min-width: 5800px) {
+    .general-infos div h1 {
+        font-size: 300px;
+    }
+    .general-infos div p {
+        font-size: 90px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .social-media h2, .general-infos h2 {
+        font-size: 60px;
+    }
+    .general-infos div h1 {
+        font-size: 60px;
+    }
+    .extra-infos .hobbies .cards div p {
+        font-size: 25px;
+    }
+    .social-media .container div button a {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .general-infos {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .extra-infos {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .extra-infos .hobbies h2 {
+        font-size: 55px;
+        text-align: center;
+    }
+    .extra-infos .social-media h2 {
+        font-size: 45px;
+    }
+    .social-media .container div h3 {
+        font-size: 30px;
+    }
+    .social-media .container div button a {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .social-media .container div button a {
+        font-size: 16px;
+    }
+    .extra-infos .hobbies .cards div p {
+        font-size: 17px;
+    }
+    .social-media .container div h3 {
+        font-size: 23px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .general-infos {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-wrap: wrap;
+    }
+    .extra-infos {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .general-infos img {
+        width: 100%;
+        left: 0%;
+    }
+    .general-infos div {
+        margin-left: 0%;
+    }
+    .general-infos div h1 {
+        width: 100%;
+    }
+    .general-infos div p {
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+    .social-media .container div button a {
+        font-size: 20px;
+    }
+    .cards div, .social-media .container div {
+        width: 45%;
+        scale: 95%;
+    }
+    .cards div:hover, .social-media .container div:hover {
+        scale: 99%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .general-infos div h1 {
+        font-size: 40px;
+    }
+    .general-infos div p {
+        font-size: 20px;
+    }
+    .extra-infos .hobbies h2, .extra-infos .social-media h2 {
+        font-size: 30px;
+    }
+    .extra-infos .social-media .container div button a {
+        font-size: 16px;
+    }
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                                END                     
+/* ----------------------------------------------------------------------*/

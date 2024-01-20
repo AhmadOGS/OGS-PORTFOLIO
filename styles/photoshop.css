@@ -1,0 +1,519 @@
+
+
+/*--------------------------------------------------
+                    General
+--------------------------------------------------*/
+
+
+
+body {
+    background-color: #d6ebf9;
+}
+
+
+
+.background {
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    position: fixed;
+    display: none;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    user-select: none;
+    color: #394955;
+}
+
+
+/*--------------------------------------------------
+                    Works
+--------------------------------------------------*/
+
+
+.works {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #CFF5FF;
+    box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+    margin-top: 3%;
+    border-radius: 20px;
+}
+
+
+/*--------------------------------------------------
+                    Poster
+--------------------------------------------------*/
+
+
+.works .poster {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.works .poster h1 {
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+
+.works .poster img {
+    width: 30%;
+    scale: 90%;
+    border-radius: 20px;
+}
+
+
+.works .poster p {
+    scale: 90%;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*--------------------------------------------------
+                Image Editing
+--------------------------------------------------*/
+
+
+.works .images-editing {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+
+.works .images-editing h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.works .images-editing .images {
+    display: flex;
+    scale: 98%;
+}
+
+
+.works .images-editing .images .arrow {
+    width: 15%;
+    height: 50%;
+    align-self: center;
+    border-radius: 0px;
+}
+
+
+.works .images-editing .images img {
+    width: 42.5%;
+    border-radius: 20px;
+}
+
+
+.works .images-editing p {
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*--------------------------------------------------
+                    Thumbnails
+--------------------------------------------------*/
+
+
+.thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+
+.thumbs h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.thumbs .slider-container {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 1.5%;
+}
+
+
+.thumbs .slider-container .slider {
+    width: 100%;
+    background-color: #3b4661;
+}
+
+
+.thumbs .slider-container .slider div {
+    width: 100%;
+    display: none;
+}
+
+
+.thumbs .slider-container .slider .slide1 {
+    display: block;
+}
+
+
+.thumbs .slider-container .slider div img {
+    width: 100%;
+}
+
+
+
+.thumbs .slider-container .slider div h3 {
+    width: 100%;
+    text-align: center;
+    z-index: 80;
+    position: relative;
+    margin-bottom: -2.5%;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+
+.thumbs .slider-container .prev-next {
+    position: relative;
+    bottom: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.thumbs .slider-container .next, .thumbs .slider-container .prev {
+    color: aliceblue;
+    user-select: none;
+    background-color: rgba(5, 5, 5, 0.153);
+    z-index: 81;
+    border-radius: 4px;
+    font-size: 40px;
+    transition: all .15s ease-in;
+    cursor: pointer;
+}
+
+
+.thumbs .slider-container .clicks {
+    width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-top: 2%;
+    height: 5%;
+    bottom: 5%;
+    position: relative;
+    z-index: 922229;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.thumbs .slider-container .clicks .dot {
+    background-color: #536c7f;
+    border-radius: 50%;
+    z-index: 9999999;
+    color: #ffffff00;
+    width: 16%;
+    display: block;
+    user-select: none;
+    transition: all 0.6s ease;
+    cursor: pointer;
+    transition: all .15s ease;
+}
+
+
+.thumbs p {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.thumbs .slider-container .slider div {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+  
+
+
+/*--------------------------------------------------
+                    Banners
+--------------------------------------------------*/
+
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+
+.banner h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+
+
+.banner img {
+    width: 100%;
+    scale: 90%;
+    border-radius: 20px;
+}
+
+
+.banner p {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/*--------------------------------------------------
+                    Hover Events
+--------------------------------------------------*/
+
+
+@keyframes fade {
+    from {opacity: 0%}
+    to {opacity: 100%}
+}
+
+
+.thumbs .slider-container .clicks .dot:hover, .thumbs .slider-container .clicks div#one {
+    background-color: #3b4661;
+}
+
+
+.thumbs .slider-container .next:hover, .thumbs .slider-container .prev:hover {
+    background-color: rgba(5, 5, 5, 0.741);
+}
+
+
+/*--------------------------------------------------
+                    MEDIA QUERIES
+--------------------------------------------------*/
+
+
+@media (max-width: 1280px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -3%;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -3.5%;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 40px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 22px;
+    }
+    .works .poster p {
+        width: 60%;
+    }
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -4%;
+        font-size: 20px;
+    }
+    .thumbs .slider-container .next, .thumbs .slider-container .prev {
+        font-size: 30px;
+    }
+    .works {
+        margin-left: 2.5%;
+        margin-bottom: 2.5%;
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 33px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 40px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 22px;
+    }
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -4.5%;
+        font-size: 17px;
+    }
+    .works .poster img, .works .poster p {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        scale: 96%;
+    }
+    .works .poster p {
+        font-size: 22px;
+        text-align: center;
+    }
+    .works .images-editing .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .works .images-editing .images img {
+        width: 95%;
+    }
+    .works .images-editing .images .arrow {
+        height: 10%;
+    }
+    .works .thumbs .slider-container {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .banner img {
+        overflow: scroll;
+        scale: 96%;
+    }
+    .works .thumbs ,.works .images-editing ,.works .banner ,.works .poster  {
+        margin-bottom: 7%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 30px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 16px;
+    }
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -5%;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 26px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 14px;
+    }
+    .thumbs .slider-container .next, .thumbs .slider-container .prev {
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 280px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 19px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 11px;
+    }
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -5.5%;
+        font-size: 11px;
+    }
+}
+
+
+@media (min-width: 2500px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 120px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 50px;
+    }
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -3.5%;
+        font-size: 60px;
+    }
+    .thumbs .slider-container .next, .thumbs .slider-container .prev {
+        font-size: 85px;
+    }
+}
+
+
+@media (min-width: 4500px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 140px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 70px;
+    }
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -3.5%;
+        font-size: 80px;
+    }
+    .thumbs .slider-container .next, .thumbs .slider-container .prev {
+        font-size: 105px;
+    }
+}
+
+
+@media (min-width: 6200px) {
+    .works .thumbs h1,.works .images-editing h1,.works .banner h1,.works .poster h1 {
+        font-size: 180px;
+    }
+    .works .thumbs p,.works .images-editing p,.works .banner p,.works .poster p {
+        font-size: 90px;
+    }
+    .thumbs .slider-container .slider div h3 {
+        margin-bottom: -3.5%;
+        font-size: 90px;
+    }
+    .thumbs .slider-container .next, .thumbs .slider-container .prev {
+        font-size: 125px;
+    }
+}

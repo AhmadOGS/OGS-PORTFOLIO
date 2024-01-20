@@ -1,0 +1,654 @@
+
+
+/* ----------------------------------------------------------------------*/
+/*                     The Main Box                      
+/* ----------------------------------------------------------------------*/
+
+
+.favs {
+    background-color: rgba(197, 253, 255, 0.441);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    transition: all .2s ease-in;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 100%;
+    margin-right: 2.5%;
+}
+
+.favs-box .anime, .games, .songs {
+    display: none;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                          The Favs Box                      
+/* ----------------------------------------------------------------------*/
+
+
+.favs-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                          The Active Favs                      
+/* ----------------------------------------------------------------------*/
+
+
+#active, #active-songs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+
+
+#active div {
+    width: 19%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    transition: all .15s ease-in;
+}
+
+
+#active div .card {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+
+#active div .card h1 {
+    width: 100%;
+    background-color: #00B7FF;
+    border-radius: 0px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#active div .card img {
+    width: 100%;
+    height: 65%;
+    scale: 97%;
+    border-radius: 15px;
+}
+
+
+#active div .card .content {
+    width: 100%;
+    border-radius: 0px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+
+#active div .card .content h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+
+#active div button.game-btn {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 12.5%;
+    cursor: pointer;
+}
+
+
+#active div button.game-btn a{
+    text-align: center;
+    width: 100%;
+}
+
+
+#active div button {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 8%;
+    overflow: hidden;
+    margin-top: -8%;
+    border-radius: 15px;
+    background-color: rgb(110, 170, 239);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+
+#active div button img {
+    width: 15%;
+    float: left;
+    margin-left: 3%;
+    border-radius: 5px;
+}
+
+
+#active div button a {
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    width: 70%;
+}
+
+
+#active div .card .content p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+#active-songs div{
+    background-color: azure;
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 2%;
+    transition: all .1s ease-in;
+    box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+    border: 5px solid black;
+}
+
+
+#active-songs div h1 {
+    background-color: #00B7FF;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 5%;
+}
+
+
+#active-songs div img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    scale: 95%;
+}
+
+
+#active-songs div .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+    background-color: azure;
+    border: 0px solid black;
+}
+
+
+#active-songs div .content h2 {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    margin-top: -1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+#active-songs div button {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    transition: all .1s ease-in;
+    border: 3px solid black;
+}
+
+
+#active-songs div .yt {
+    background-color: red;
+}
+
+
+#active-songs div .spotify {
+    background-color: rgb(21, 227, 14);
+}
+
+
+#active-songs div button img {
+    width: 20%;
+    height: 40px;
+    justify-self: start;
+}
+
+
+#active-songs div button a {
+    font-size: 20px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+#active div .game-btn {
+    height: 10%;
+    width: 60%;
+}
+
+
+#active div .game-btn a {
+    top: 1%;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                          The Choices Box                      
+/* ----------------------------------------------------------------------*/
+
+
+.favs-choices {
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1%;
+    justify-content: center;
+}
+
+
+.favs-choices div{
+    margin-left: 2%;
+    background-color: aqua;
+    border-radius: 35px;
+    width: 15%;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+
+.favs-choices div h6 {
+    font-size: 30px;
+    user-select: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.favs-choices .activated {
+    scale: 110%;
+    background-color: #00B7FF;
+}
+
+
+.favs-choices .activated h6 {
+    color: #001144;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                          The Audio Element                      
+/* ----------------------------------------------------------------------*/
+
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(127, 232, 255);
+    color: aliceblue;
+    width: 50%;
+}
+
+
+audio::-webkit-media-controls-play-button {
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+
+#active-songs div audio {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 70%;
+    scale: 130%;
+}
+
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    height: 100%;
+}
+
+
+audio::-webkit-media-controls-play-button {
+    scale: 120%;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                          The Hover Events                      
+/* ----------------------------------------------------------------------*/
+
+
+#active div:hover {
+    scale: 105%;
+}
+
+
+#active div .card:hover {
+    scale: 100%;
+}
+
+
+#active-songs div:hover {
+    scale: 105%;
+}
+
+
+#active div .content:hover {
+    scale: 100%;
+}
+
+
+#active-songs div .content:hover {
+    scale: 100%;
+}
+
+
+#active div button:hover {
+    background-color: #00B7FF;
+}
+
+
+#active-songs div .content button:hover {
+    background-color: cornflowerblue;
+}
+
+.favs-choices div:hover {
+    scale: 110%;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                           MEDIA QUERIES                      
+/* ----------------------------------------------------------------------*/
+
+
+@media (max-width: 1552px) {
+    #active div button a, #active-songs div .content button  {
+        font-size: 20px;
+    }
+    #active-songs div h1 {
+        font-size: 25px;
+    }
+    #active-songs div .content h2, #active div .card .content h2 {
+        font-size: 28px;
+    }
+    #active div .card .content p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .favs {
+        height: 1800px;
+        justify-content: start;
+    }
+    #active div {
+        width: 33%;
+        height: 55%;
+        scale: 85%;
+    }
+    #active-songs div {
+        width: 33%;
+        scale: 85%;
+    }
+    #active div:hover, #active-songs div:hover {
+        scale: 90%;
+    }
+    #active div .card:hover {
+        scale: 100%;
+    }
+    #active div .card {
+        height: 100%;
+        scale: 100%;
+    }
+    #active div .card .content h2, #active-songs div .content h2 {
+        font-size: 50px;
+    }
+    #active div .card .content p {
+        font-size: 23px;
+    }
+    #active div button a, #active-songs div button a {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 1030px) {
+    #active div, #active-songs div {
+        scale: 90%;
+    }
+    #active div .card .content h2, #active-songs div .content h2 {
+        font-size: 40px;
+    }
+    #active div .card .content p {
+        font-size: 20px;
+    }
+    #active-songs div .content {
+        scale: 90%;
+    }
+    #active div:hover, #active-songs div:hover {
+        scale: 95%;
+    }
+    #active-songs div .content:hover {
+        scale: 90%;
+    }
+    #active div .card:hover {
+        scale: 100%;
+    }
+}
+
+
+@media (max-width: 920px) {
+    #active div, #active-songs div {
+        width: 50%;
+        height: 40%;
+    }
+    .favs {
+        height: 2900px;
+    }
+    #active-songs div .content {
+        background-color: rgba(240, 248, 255, 0);
+    }
+    #active-songs div button {
+        margin-bottom: 10%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #active div, #active-songs div {
+        width: 95%;
+        height: 30%;
+        scale: 95%;
+    }
+    #active div:hover, #active-songs div:hover {
+        scale: 97%;
+    }
+    #active div .card .content:hover {
+        scale: 95%;
+    }
+    #active-songs div .content:hover {
+        scale: 90%;
+    }
+    #active div button {
+        height: 6%;
+    }
+    .favs {
+        height: 6700px;
+    }
+    .favs-choices div h6 {
+        font-size: 30px;
+        margin-top: 5%;
+    }
+    .favs-choices div {
+        width: 35%;
+        height: 120%;
+    }
+    #active div .game-btn {
+        height: 7%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .favs {
+        height: 5800px;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .favs {
+        height: 5500px;
+    }
+}
+
+@media (max-width: 400px) {
+    .favs-choices div h6 {
+        font-size: 25px;
+    }
+    #active div, #active-songs div {
+        width: 99%;
+        height: 25%;
+    }
+    .favs {
+        height: 4300px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .favs {
+        height: 3600px;
+    }
+}
+
+
+
+@media (max-width: 300px) {
+    .favs {
+        height: 3500px;
+    }
+    #active div button a, #active-songs div .content button a {
+        font-size: 20px;
+    }
+    #active-songs div .content h2, #active div .card .content h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 1900px) {
+    .favs {
+        height: 100%;
+    }
+    #active div, #active-songs div {
+        width: 33%;
+        height: 50%;
+        scale: 95%;
+    }
+    #active-songs div .content {
+        height: 30%;
+    }
+    #active div .card, #active-songs div .content {
+        scale: 100%;
+    }
+    #active div .card {
+        height: 100%;
+    }
+    #active div .card .content {
+        scale: 90%;
+    }
+    #active div .card .content p {
+        font-size: 40px;
+    }
+    #active div .game-btn a , #active div button a, #active-songs div .content button a {
+        font-size: 40px;
+    }
+    #active div .card .content h2, #active-songs div .content h2 {
+        font-size: 70px;
+    }
+    .favs-choices div {
+        width: 20%;
+        height: 120%;
+    }
+    .favs-choices div h6 {
+        font-size: 60px;
+    }
+    #active div:hover, #active-songs div:hover {
+        scale: 98%;
+    }
+    #active div h1, #active-songs div h1 {
+        font-size: 70px;
+    }
+}
+
+
+@media (min-width: 3700px) {
+    .favs-choices div h6 {
+        font-size: 85px;
+    }
+    #active div h1, #active-songs div h1 {
+        font-size: 90px;
+    }
+    #active div .card .content h2 , #active-songs div .content h2 {
+        font-size: 130px;
+    }
+    #active div .card .content p {
+        font-size: 70px;
+    }
+    #active div .game-btn a, #active div button a, #active-songs div .content button a {
+        font-size: 85px;
+    }
+    #active-songs div .content button img {
+        height: 200px;
+    }
+    .favs {
+        margin-bottom: 8%;
+    }
+}
+
+
+@media (min-width: 5000px) {
+    #active div, #active-songs div {
+        width: 20%;
+        height: 100%;
+    }
+    .favs {
+        margin-bottom: 25%;
+    }
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                                END                      
+/* ----------------------------------------------------------------------*/

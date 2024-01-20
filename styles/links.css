@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+div {
+    background-color: rgba(128, 232, 255, 0.534);
+    width: 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 13px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+
+div h1 {
+    font-size: 50px;
+    width: 50%;
+    scale: 90%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+div button {
+    width: 20%;
+    height: 60%;
+    background-color: rgb(127, 219, 255);
+    border-radius: 18px;
+    border: 0px;
+    margin-left: 12.5%;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+
+div button a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding: 23% 23% 23% 23%;
+}
+
+
+div button:hover {
+    scale: 105%;
+    background-color: rgb(214, 127, 255);
+}

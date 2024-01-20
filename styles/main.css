@@ -1,0 +1,504 @@
+
+
+/* ----------------------------------------------------------------------*/
+/*                           GENERAL DESIGN */
+/* ----------------------------------------------------------------------*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.background {
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    position: fixed;
+    display: none;
+}
+
+
+#blur {
+    filter: blur(40px);
+    pointer-events: none;
+}
+
+
+body {
+    background-color: #F2FAFF;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    user-select: none;
+    color: #394955;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                     THE NAVIGATION BAR                                 */
+/* ----------------------------------------------------------------------*/
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 60px;
+    background-color: #6496BA;
+    z-index: 999;
+    display: flex;
+    justify-content: end;
+}
+
+
+.navbar h1 {
+    color: #2d3942;
+    position: absolute;
+    left: 0%;
+    font-size: 60px;
+    margin-left: .2%;
+    margin-top: -.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar .checkbox {
+    display: none;
+    background-color: #ddddddb2;
+    overflow: hidden;
+    width: 60px;
+    margin-right: 5%;
+    border-radius: 50%;
+    scale: 90%;
+}
+
+
+.navbar .checkbox img {
+    width: 100%;
+    scale: 90%;
+}
+
+
+.navbar .menus {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+
+.navbar .menus a {
+    background-color: #ffffff;
+    width: 23%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    line-height: 60px;
+    border-radius: 20px;
+    scale: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    transition: all .1s ease-in;
+}
+
+
+.navbar a.active {
+background-color: #00B7FF;
+color: white;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                 THE CONTACT POP-UP WINDOW                               */ 
+/* ----------------------------------------------------------------------*/
+
+
+.contact-window {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    height: 50%;
+    border-radius: 30px;
+    top: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    z-index: 99999;
+    width: 60%;
+    visibility: hidden;
+    background-color: #E6F4F1;
+    border: 10px solid #6496BA;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in;
+}
+
+
+.contact-window h1 {
+    text-align: center;
+    font-size: 35px;
+    background-color: #6496BA;
+    margin-top: -2.5%;
+    border-radius: 15px;
+    width: 75%;
+    align-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+    padding: 2% 2% 2% 2%;
+}
+
+
+.contact-window .contacts {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contact-window .contacts div {
+    width: 40%;
+}
+
+
+.contact-window .contacts div h3 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.contact-window .contacts div p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+
+.contact-window button {
+    width: 20%;
+    align-self: center;
+    height: 10%;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .15s ease-in;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                           THE FOOTER                               */
+/* ----------------------------------------------------------------------*/
+
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    background-color: #6496BA;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    z-index: 88;
+}
+
+
+footer button {
+    margin: 5px 5px 20px 0px;
+    width: 150px;
+    height: 50px;
+    background-color: #00B7FF;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                     The Hover Events                      
+/* ----------------------------------------------------------------------*/
+
+
+footer button:hover {
+    font-size: 40px;
+    background-color: #ddd;
+}
+
+
+.contact-window button:hover {
+    background-color: #00B7FF;
+    font-size: 35px;
+}
+
+
+.navbar .menus a:hover {
+    background-color: #00B7FF;
+    color: #ffffff;
+    scale: 90%;
+}
+
+
+/* ----------------------------------------------------------------------*/
+/*                           MEDIA QUERIES                                */
+/* ----------------------------------------------------------------------*/
+
+
+@media (min-width: 2000px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbar {
+        height: 5%;
+        position: relative;
+    }
+    .navbar .menus {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .navbar .menus a {
+        font-size: 70px;
+        line-height: 170px;
+    }
+    footer {
+        height: 5%;
+    }
+    footer button {
+        font-size: 75px;
+        width: 20%;
+        height: 90%;
+    }
+    footer button:hover {
+        font-size: 80px;
+    }
+    .contact-window {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        border: 25px solid #ddd;
+    }
+    .contact-window h1 {
+        font-size: 120px;
+    }
+    .contact-window .contacts div h3 {
+        font-size: 120px;
+    }
+    .contact-window .contacts div p {
+        font-size: 80px;
+    }
+    .contact-window button {
+        font-size: 90px;
+    }
+    .contact-window button:hover {
+        font-size: 100px;
+    }
+}
+
+
+@media (min-width: 3000px) {
+    .navbar .menus a {
+        font-size: 100px;
+        line-height: 170px;
+    }
+    footer button {
+        font-size: 90px;
+    }
+    footer button:hover {
+        font-size: 95px;
+    }
+}
+
+
+@media (min-width: 3800px) {
+    footer {
+        position: relative;
+    }
+    .contact-window {
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+    .contact-window h1 {
+        font-size: 150px;
+    }
+}
+
+
+@media (min-width: 5400px) {
+    .contact-window h1 {
+        font-size: 190px;
+    }
+    .contact-window {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+
+@media (max-width: 1540px) {
+    .navbar .menus a {
+        font-size: 23px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .navbar .menus a {
+        font-size: 20px;
+    }
+    .contact-window h1 {
+        font-size: 25px;
+    }
+    .contact-window .contacts div h3 {
+        font-size: 23px;
+    }
+    .contact-window button {
+        font-size: 18px;
+    }
+    .contact-window .contacts div p {
+        font-size: 18px;
+    }
+    .contact-window button:hover {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .navbar .menus {
+        display: none;
+    }
+    .navbar .checkbox {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar  #active-menu {
+        opacity: 100%;
+        display: flex;
+        height: 99%;
+    }
+    .navbar  #active-menu a{
+        pointer-events: visible;
+    }
+    .navbar .menus {
+        width: 100%;
+        top: 60px;
+        opacity: 0%;
+        display: none;
+        background-color: #ffffff;
+        display: flex;
+        position: fixed;
+        justify-content: start;
+        height: 1%;
+        flex-direction: column;
+        z-index: 999999;
+        transition: all .25s ease-in;
+    }
+    .navbar .menus a {
+        background-color: #00B7FF;
+        width: 100%;
+        margin-top: 10px;
+        pointer-events: none;
+        height: 15%;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 50px;
+        border-radius: 0px;
+        scale: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        padding-top: 5%;
+        transition: all .1s ease-in;
+        border: 5px solid black;
+    }
+    .navbar .menus a:hover {
+        background-color: #0088ff;
+        color: #ffffff;
+        scale: 90%;
+    }
+    .contact-window .contacts {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-window .contacts div {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+    .contact-window h1 {
+        margin-top: -5%;
+    }
+    .contact-window .contacts div h3, .contact-window .contacts div p {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .contact-window .contacts div p {
+        font-size: 20px;
+    }
+    .contact-window .contacts div h3 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .contact-window h1 {
+        font-size: 23px;
+    }
+    .contact-window {
+        width: 75%;
+        margin-left: 12.5%;
+        margin-bottom: 12.5%;
+        border: 5px solid #6496BA;
+    }
+    .contact-window .contacts div p {
+        font-size: 18px;
+    }
+    .contact-window .contacts div h3 {
+        font-size: 25px;
+    }
+    .contact-window button {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .contact-window {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-bottom: 7.5%;
+        height: 45%;
+    }
+    .contact-window button {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .navbar .menus a{
+        font-size: 25px;
+    }
+    .contact-window h1 {
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .contact-window .contacts div h3 {
+        font-size: 20px;
+    }
+    .contact-window .contacts div p {
+        font-size: 17px;
+    }
+}
+
+/* END */
