@@ -1,0 +1,1386 @@
+h1, h2, h3, h4, h5, h6, p, a{
+    user-select: none;
+    color: #CAF0F8;
+}
+
+body {
+    background-color: #90E0EF;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    z-index: -11;
+    margin-top: -1%;
+    margin-left: -1%;
+    scale: 150%;
+    height: fit-content;
+    opacity: 20%;
+}
+
+/* APP */
+.App {
+    display: flex;
+    background-color: #03045E;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+    border: 4px solid #03045E;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.contacts-box {
+    height: 800px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.info-box {
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    background-color: #04067a;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills-box {
+    height: 10%;
+    background-color: #004469;
+    border: 3px solid #94c5f4;
+    box-shadow: 0 0 12px 1px #aadcf6ab;
+    border-radius: 13px;
+    padding-top: .7%;
+    padding-bottom: .5%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.works-box {
+    width: 100%;
+    background-color: #028eda;
+    margin-top: 1%;
+}
+
+
+
+/* About Me */
+.about-me-place div {
+    width: 100%;
+}
+
+/* IMG */
+.about-me-place img {
+    width: 60%;
+    margin-top: 3%;
+    margin-bottom: -2%;
+    scale: 110%;
+}
+
+/* INFOS */
+.about-me-place h2, .about-me-place p {
+    text-align: center;
+}
+
+.about-me-place h2 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.about-me-place p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+
+/* Skills */
+.skill-place {
+    width: 100%;
+    height: 100%;
+}
+
+.skill-place .skills-navbar {
+    position: relative;
+}
+
+/* POP-UP BOXES */
+.skill-place .skill-infos-box, .content-simples-box {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+
+.skill-place .skill-infos, .content-simples {
+    position: fixed;
+    background-color: #02659b;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 60%;
+    margin-left: 15%;
+    margin-top: -43%;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+}
+
+#visible {
+    opacity: 100%;
+    z-index: 999;
+    margin-top: -45%;
+}
+
+#visible-box {
+    opacity: 100%;
+    z-index: 1;
+}
+
+
+#hidden {
+    opacity: 0%;
+    z-index: -111;
+}
+
+/* SKILL INFOS POP-UP BOX */
+.skill-place .skill-infos h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: flex-start;
+    margin-top: -.5%;
+    margin-left: .5%;
+    cursor: pointer;
+    transition: all .05s ease-in-out;
+}
+
+.skill-place .skill-infos h1:hover {
+    color: rgb(4, 18, 171);
+}
+
+
+.skill-place .skill-infos img {
+    width: 30%;
+}
+
+.skill-place .skill-infos h3 {
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.skill-place .skill-infos p {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skill-place .skill-infos a {
+    background-color: #CAF0F8;
+    text-decoration: none;
+    width: 10%;
+    margin-bottom: 1%;
+    color: black;
+    font-size: 29px;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: all .2s ease-in-out;
+}
+
+.skill-place .skill-infos a:hover {
+    background-color: #94c5f4;
+    border: 3px solid #03045E;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.571);
+
+}
+
+
+/* SKILLS NAVBAR */
+.skill-place .skills-navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-place .skills-navbar div {
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: blueviolet; */
+    border-radius: 7px;
+    align-content: center;
+    transition: all .1s ease-in-out;
+}
+
+.skill-place .skills-navbar div:hover {
+    margin-top: -.5%;
+}
+
+.skill-place .skills-navbar div img {
+    width: 70%;
+    margin-top: 2%;
+    margin-bottom: -2%;
+}
+
+
+
+/* CONTACTS */
+.contacts-place {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* CONTACTS ELEMENTS */
+.contacts-place .media {
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: blue;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    height: 100px;
+    margin-top: 3%;
+    transition: all .1s ease-in-out;
+    border: 2px solid black;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contacts-place .media:hover {
+    margin-left: 3.2%;
+}
+
+.contacts-place .media img {
+    width: 18%;
+    height: 100%;
+    scale: 80%;
+    align-self: flex-start;
+}
+
+.contacts-place .media h1 {
+    width: 62%;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.contacts-place .media a {
+    width: 16%;
+    height: 40%;
+    align-self: center;
+    border-radius: 10px;
+    border: 3px solid #03045E;
+    background-color: #0dd9fd;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.contacts-place .media a:hover {
+    background-color: #0508c8;
+    box-shadow: 0 0 4px 3px #0dd9fd;
+    color: #94c5f4;
+}
+
+
+
+/* CONTENT */
+.content-place {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+/* CONTENT NAVBAR */
+.content-place .navbar {
+    width: 100%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    display: flex;
+    background-color: #02659b;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* CONTENT NAVBAR ELEMENTS */
+.content-place .navbar .content-type {
+    background-color: #90E0EF;
+    cursor: pointer;
+    width: 24%;
+    user-select: none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    transition: all .1s ease-in-out;
+}
+
+.content-place .navbar .content-type:hover, #selected {
+    box-shadow: 0 0 4px 3px rgb(88, 186, 189);
+    background-color: rgb(152, 250, 254);
+}
+
+
+/* CONTENT DESCRIPTION */
+.content-place .desc-box {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1%;
+    user-select: none;
+    margin-bottom: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* CONTENT SIMPLES */
+.content-place .content-box {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(0, 174, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* SIMPLE CARD */
+.card {
+    transition: all .15s ease-in-out;
+    width: 35%;
+    border-radius: 20px;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 1%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+    scale: 101.5%;
+    border: 4px solid #070a92;
+    box-shadow: 0 0 10px 5px #caf0f8b7;
+}
+
+.card:hover .informations {
+    background-color: #0dd9fd;
+}
+
+
+/* CARD INFORMATIONS */
+.card h6 {
+    font-size: 40px;
+    color: black;
+    background-color: aliceblue;
+    margin-top: 0%;
+    margin-bottom: 50%;
+    width: 100%;
+    height: 9%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card .informations {
+    background-color: #90E0EF;
+    transition: all .15s ease-in-out;
+    margin-left: 25%;
+    width: 50%;
+    align-self: center;
+    border-radius: 15px;
+    padding-bottom: 2%;
+    border: 3px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card .informations p {
+    font-size: 25px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card .informations a, .card .informations button {
+    background-color: #0077B6;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    border: 2px solid black;
+    width: 30%;
+    transition: all .14s ease-in-out;
+}
+
+.card .informations a:hover, .card .informations button:hover {
+    background-color: #03045E;
+}
+
+.card .informations a {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+/* CONTENT SIMPLES POP-UP BOX */
+.content-simples {
+    border-radius: 10px;
+    overflow-y: scroll;
+    width: 50%;
+    align-items: stretch;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-around;
+    margin-left: 18%;
+}
+
+
+/* THE SIMPLES IN THE POP-UP BOX */
+.content-simples .simple {
+    width: 20%;
+    height: fit-content;
+    background-color: #90E0EF;
+    margin-top: 2%;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 3px solid black;
+    transition: all .1s ease-in-out;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-simples .simple:hover {
+    scale: 102%;
+    border: 3px solid #03045E;
+    box-shadow: 0 0 14px 3px #0dd9fd79;
+}
+
+.simple h3 {
+    margin-left: 1%;
+    color: black;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.simple a {
+    background-color: #028eda;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 26px;
+    transition: all .1s ease-in-out;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.simple a:hover {
+    background-color: #0dd9fd;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUIRIES */
+
+@media (max-width: 1450px) {
+    .App {
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .skill-place .skill-infos a {
+        font-size: 25px;
+    }
+    .content-place .desc-box {
+        font-size: 40px;
+    }
+    .card {
+        width: 40%;
+    }
+
+
+    .skill-place .skill-infos, .content-simples {
+        margin-left: 18.5%;
+        margin-top: -47%;
+    }
+    
+    #visible {
+        margin-top: -50%;
+    }
+
+    .content-simples {
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 1235px) {
+    .skill-place .skill-infos a {
+        font-size: 22px;
+    }
+    .contacts-box, .info-box {
+        height: 700px;
+    }
+    .contacts-place .media img {
+        width: 20%;
+    }
+    .contacts-place .media h1 {
+        width: 60%;
+        font-size: 26px;
+    }
+    .contacts-place .media {
+        height: 80px;
+    }
+    .skill-place .skills-navbar div img {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1026px) {
+    .skill-place .skill-infos, .content-simples {
+        margin-left: 18.5%;
+        margin-top: -28%;
+    }
+    
+    #visible {
+        margin-top: -35%;
+    }
+
+    .content-simples {
+        margin-left: 22%;
+    }
+
+
+    .contacts-box {
+        width: 100%;
+        height: 100px;
+    }
+    .contacts-place .media img {
+        width: 55%;
+        height: 100%;
+        margin-left: 0px;
+        scale: 90%;
+    }
+    .contacts-place {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contacts-place .media h1 {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+    .contacts-place .media a {
+        width: 40%;
+        height: 50%;
+    }
+    .contacts-place .media {
+        display: flex;
+        margin-top: 0%;
+        padding-right: 1%;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 90px;
+    }
+    .info-box {
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .about-me-place {
+        display: flex;
+    }
+    
+    .about-me-place img {
+        width: 50%;
+        scale: 90%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        
+    }
+
+    .about-me-place div {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        padding-right: 2%;
+        justify-content: center;
+    }
+
+    .skills-box {
+        height: fit-content;
+        box-shadow: 0 0 12px 1px #aadcf6ab;
+        border-radius: 0px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .skill-place .skills-navbar {
+        width: 100%;
+    }
+    
+    .skill-place .skills-navbar div {
+        width: 10%;
+        cursor: pointer;
+        border-radius: 0px;
+    }
+    
+    .skill-place .skills-navbar div img {
+        width: 70%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+
+    .card {
+        width: 90%;
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    .card h6 {
+        font-size: 30px;
+        margin-bottom: 0%;
+        height: 16%;
+    }
+    
+    .card .informations {
+        margin-left: 60%;
+        width: 35%;
+    }
+
+
+
+    .contacts-place .media:hover {
+        margin-top: .5%;
+        z-index: 92;
+    }
+
+
+
+    .skill-place .skill-infos img {
+        width: 35%;
+    }
+    
+    .skill-place .skill-infos h3 {
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    
+    
+    .skill-place .skill-infos a {
+        width: 25%;
+        font-size: 29px;
+    }
+
+    .content-simples .simple {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .skill-place .skill-infos, .content-simples {
+        margin-left: 18.5%;
+        margin-top: -23%;
+    }
+    
+    #visible {
+        margin-top: -30%;
+    }
+
+    .content-simples {
+        margin-left: 8.5%;
+        width: 80%;
+    }
+
+
+    .contacts-box {
+        height: 70px;
+    }
+    .contacts-place .media img {
+        width: 50%;
+        height: 90%;
+        margin-right: 3%;
+    }
+    .contacts-place .media a {
+        border: 1.5px solid black;
+        font-size: 25px;
+    }
+    .contacts-place .media {
+        width: 18%;
+        height: 65px;
+    }
+
+    .content-place .desc-box {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-me-place img {
+        width: 55%;
+        scale: 90%;
+    }
+    .info-and-skills-container {
+        height: 400px;
+    }
+    .skills-box {
+        box-shadow: 0 0 10px 1px #aadcf6ab;
+    }
+    .card {
+        width: 90%;
+        border-radius: 20px;
+        height: 200px;
+    }
+    .card .informations {
+        margin-left: 67%;
+        border: 2px solid black;
+        width: 30%;
+    }
+    .card .informations p {
+        font-size: 20px;
+    }
+    .card .informations a{
+        font-size: 17px;
+    }
+    .content-place .desc-box {
+        font-size: 30px;
+    }
+
+    .content-place .navbar {
+        flex-wrap: wrap;
+        padding-bottom: 1%;
+    }
+
+    .content-place .navbar .content-type {
+        font-size: 25px;
+        width: 45%;
+        margin-top: .7%;
+    }
+    .skill-place .skill-infos h3 {
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .works-box {
+        margin-top: 3%;
+    }
+
+    .skill-place .skill-infos a {
+        width: 20%;
+        font-size: 25px;
+    }
+
+    .content-simples .simple {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 790px) {
+    .skill-place .skill-infos, .content-simples {
+        margin-top: -23%;
+    }
+    
+    #visible {
+        margin-top: -30%;
+    }
+
+
+    .about-me-place img {
+        width: 65%;
+    }
+    .about-me-place div {
+        width: 100%;
+    }
+    .about-me-place div h2 {
+        font-size: 45px;
+    }
+    .about-me-place div p {
+        font-size: 22px;
+    }
+    .info-and-skills-container {
+        height: 450px;
+    }
+    .card .informations p {
+        font-size: 22px;
+    }
+    .card .informations a{
+        font-size: 15px;
+    }
+    .contacts-place .media {
+        width: 20%;
+
+    }
+}
+
+@media (max-width: 690px) {
+    .skill-place .skill-infos {
+        margin-top: -63%;
+    }
+    
+    #visible {
+        margin-top: -100%;
+    }
+
+    .content-simples {
+        margin-left: 8%;
+    }
+
+    .contacts-box {
+        overflow-y: scroll;
+        width: 20%;
+        height: 600px;
+    }
+    .contacts-place .media img {
+        width: 95%;
+        margin-right: -2.5%;
+        margin-top: 10%;
+        scale: 90%;
+        margin-bottom: 5%;
+    }
+    .contacts-place .media h1 {
+        width: 0px;
+        height: 0px;
+        z-index: -1000;
+        position: absolute;
+    }
+    .contacts-place .media a {
+        width: 100%;
+        scale: 105%;
+        border-radius: 0px;
+    }
+    .contacts-place .media {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2%;
+        width: 86%;
+        height: fit-content;
+    }
+    .info-box {
+        width: 80%;
+        height: fit-content;
+        overflow: hidden;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .about-me-place {
+        flex-direction: column;
+    }
+
+    .about-me-place img {
+        width: 100%;
+        scale: 100%;
+        margin-top: 1%;
+        margin-bottom: 0%;
+    }
+
+    .about-me-place div {
+        width: 100%;
+    }
+
+
+    .skill-place .skills-navbar {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .skill-place .skills-navbar div {
+        width: 25%;
+        cursor: pointer;
+        border-radius: 0px;
+    }
+    
+    .skill-place .skills-navbar div img {
+        width: 50%;
+    }
+
+
+    .content-place .navbar .content-type {
+        font-size: 23px;
+        width: 49%;
+        margin-top: .7%;
+    }
+
+
+
+
+
+
+
+
+    .card {
+        width: 90%;
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    .card h6 {
+        font-size: 30px;
+        margin-bottom: 0%;
+        height: 16%;
+    }
+    
+    .card .informations {
+        margin-left: 60%;
+        width: 35%;
+    }
+
+
+
+    .contacts-place .media:hover {
+        margin-left: 9%;
+    }
+
+
+
+    .skill-place .skill-infos img {
+        width: 35%;
+    }
+    
+    .skill-place .skill-infos h3 {
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    
+    .skill-place .skill-infos a {
+        width: 25%;
+        font-size: 29px;
+    }
+
+    .content-simples .simple {
+        width: 45%;
+    }
+    .card .informations a, .card .informations button {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .skill-place .skill-infos a {
+        font-size: 25px;
+    }
+    .skill-place .skill-infos {
+        width: 80%;
+        margin-left: 6.5%;
+    }
+    .content-simples {
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 500px) {
+    .App {
+        width: 99%;
+        margin-left: .5%;
+        margin-right: .5%;
+    }
+    .info-box {
+        height: 600px;
+    }
+    .contacts-box {
+        overflow-y: scroll;
+        width: 20%;
+        height: 600px;
+    }
+    .skill-place .skill-infos a {
+        font-size: 22px;
+    }
+    .content-place .desc-box {
+        font-size: 23px;
+    }
+}
+
+@media (max-height: 730px) {
+    #visible {
+        margin-top: -115%;
+    }
+}
+
+@media (max-height: 650px) {
+    #visible {
+        margin-top: -55%;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .skill-place .skill-infos {
+        width: 80%;
+        margin-left: 6%;
+    }
+    
+    #visible {
+        margin-top: -110%;
+    }
+
+    .content-simples {
+        margin-left: 8%;
+    }
+
+    .content-simples .simple {
+        width: 70%;
+    }
+
+    .skill-place .skill-infos h1 {
+        font-size: 20px;
+        margin-left: 2%;
+    }
+
+
+    .info-box, .contacts-box {
+        height: 500px;
+    }
+    .contacts-place .media a {
+        font-size: 20px;
+        margin-top: 2%;
+    }
+    .about-me-place div h2 {
+        font-size: 30px;
+    }
+    .about-me-place div p {
+        font-size: 18px;
+    }
+    .info-and-skills-container, .contacts-box {
+        height: 570px;
+    }
+    .card .informations a, .card .informations button {
+        font-size: 15px;
+    }
+    .card .informations p {
+        font-size: 17px;
+    }
+    .card .informations {
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 40%;
+        margin-left: 55%;
+    }
+      
+    .skill-place .skill-infos img {
+        width: 35%;
+    }
+    
+    .skill-place .skill-infos h3 {
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    
+    .skill-place .skill-infos a {
+        width: 25%;
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .skill-place .skill-infos {
+        width: 80%;
+        margin-left: 6%;
+    }
+    
+    #visible {
+        margin-top: -120%;
+    }
+
+    .content-simples {
+        margin-left: 6%;
+    }
+
+
+    .contacts-box {
+        width: 15%;
+    }
+    .info-and-skills-container {
+        width: 85%;
+    }
+    .contacts-place .media a {
+        font-size: 15px;
+    }
+    .content-place .navbar .content-type {
+        font-size: 20px;
+    }
+    .content-place .desc-box {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .skill-place .skill-infos {
+        width: 80%;
+        margin-left: 6%;
+    }
+    
+    #visible {
+        margin-top: -120%;
+    }
+
+    .content-simples {
+        margin-left: 6%;
+    }
+
+
+    .contacts-place .media {
+        border-radius: 6px;
+    }
+    .contacts-place .media a {
+        font-size: 10px;
+    }
+    .contacts-box, .info-and-skills-container {
+        height: 500px;
+    }
+    .content-place .navbar .content-type {
+        font-size: 15px;
+    }
+    .card .informations a, .card .informations button {
+        font-size: 10px;
+        width: 50%;
+    }
+    .card {
+        border-radius: 5px;
+        border: 3px solid black;
+    }
+    .card .informations {
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+    .skill-place .skill-infos a {
+        font-size: 17px;
+        border-radius: 2px;
+    }
+}
+
+
+
+
+@media (min-width: 2300px) {
+    .contacts-place .media h1 {
+        font-size: 40px;
+    }
+    .content-place .navbar .content-type {
+        font-size: 40px;
+    }
+
+    .contacts-place .media {
+        height: 150px;
+    }
+
+    .contacts-place .media a {
+        font-size: 30px;
+    }
+    
+    .card {
+        width: 90%;
+        border-radius: 20px;
+        height: 500px;
+    }
+    
+    .card h6 {
+        font-size: 60px;
+        margin-bottom: 0%;
+        height: 16%;
+    }
+    
+    .card .informations {
+        margin-left: 60%;
+        width: 35%;
+    }
+
+    .card .informations a, .card .informations button{
+        font-size: 45px;
+    }
+
+    .card .informations p {
+        font-size: 50px;
+    }
+
+    .content-place .desc-box {
+        font-size: 70px;
+    }
+
+    .about-me-place h2 {
+        font-size: 80px;
+    }
+
+    .about-me-place p {
+        font-size: 55px;
+    }
+
+    #visible {
+        margin-top: 0%;
+    }
+
+    .skill-place .skill-infos h1 {
+        font-size: 80px;
+        margin-left: 2%;
+    }
+
+    .skill-place .skill-infos h3 {
+        font-size: 90px;
+    }
+
+    .skill-place .skill-infos a{
+        font-size: 90px;
+        width: 35%;
+    }
+
+    .content-simples .simple {
+        width: 80%;
+    }
+
+    .content-simples .simple h3 {
+        font-size: 90px;
+    }
+
+    .content-simples .simple a {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 2900px) {
+    .contacts-place .media h1 {
+        font-size: 50px;
+    }
+    .content-place .navbar .content-type {
+        font-size: 60px;
+    }
+
+    .contacts-place .media {
+        height: 150px;
+    }
+
+    .contacts-place .media a {
+        font-size: 50px;
+    }
+
+    .content-place .desc-box {
+        font-size: 90px;
+    }
+
+
+    .card .informations a, .card .informations button{
+        font-size: 55px;
+    }
+
+    .card .informations p {
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 3400px) {
+    #visible {
+        margin-top: -10%;
+    }
+
+    .skill-place .skill-infos h1 {
+        font-size: 90px;
+        margin-left: 2%;
+    }
+}
+
+@media (min-width: 4400px) {
+
+    #visible {
+        margin-top: -25%;
+    }
+
+    .skill-place .skill-infos h1 {
+        margin-left: .8%;
+    }
+
+    .skill-place .skill-infos h3 {
+        font-size: 150px;
+    }
+
+    .skill-place .skill-infos a{
+        font-size: 90px;
+        width: 35%;
+    }
+    .about-me-place h2 {
+        font-size: 110px;
+        margin-top: 10%;
+    }
+
+    .about-me-place p {
+        font-size: 75px;
+    }
+
+    .content-simples .simple h3 {
+        font-size: 110px;
+    }
+
+    .content-simples .simple a {
+        font-size: 100px;
+    }
+
+
+    .contacts-place .media h1 {
+        font-size: 80px;
+    }
+    .content-place .navbar .content-type {
+        font-size: 90px;
+    }
+
+    .contacts-place .media {
+        height: 250px;
+    }
+
+    .contacts-place .media a {
+        font-size: 75px;
+    }
+
+    .card {
+        height: 750px;
+    }
+
+    .card h6 {
+        font-size: 100px;
+    }
+
+    .card .informations a, .card .informations button{
+        font-size: 75px;
+    }
+
+    .card .informations p {
+        font-size: 90px;
+    }
+}
