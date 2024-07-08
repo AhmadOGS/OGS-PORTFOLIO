@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OGS-PORTFOLIO/static/css/main.6f0d83cd.css",
+    "main.css": "/OGS-PORTFOLIO/static/css/main.5afaf90e.css",
     "main.js": "/OGS-PORTFOLIO/static/js/main.6b845bbd.js",
     "static/media/personal image.png": "/OGS-PORTFOLIO/static/media/personal image.3f8d458dcbeca840519c.png",
     "static/media/مين عمتك قانيو ولا اياكا.jpg": "/OGS-PORTFOLIO/static/media/مين عمتك قانيو ولا اياكا.a409e242c4abd12445ef.jpg",
@@ -28,11 +28,11 @@
     "static/media/html.png": "/OGS-PORTFOLIO/static/media/html.ff3cf75e3b7cbb4ea77c.png",
     "static/media/js.png": "/OGS-PORTFOLIO/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/OGS-PORTFOLIO/index.html",
-    "main.6f0d83cd.css.map": "/OGS-PORTFOLIO/static/css/main.6f0d83cd.css.map",
+    "main.5afaf90e.css.map": "/OGS-PORTFOLIO/static/css/main.5afaf90e.css.map",
     "main.6b845bbd.js.map": "/OGS-PORTFOLIO/static/js/main.6b845bbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f0d83cd.css",
+    "static/css/main.5afaf90e.css",
     "static/js/main.6b845bbd.js"
   ]
 }
